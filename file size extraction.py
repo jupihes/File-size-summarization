@@ -33,11 +33,11 @@ def folder_files(folder = r'C:\\', size = 200):
     return df
 
 folders = [r'C:\\Windows',r'D:\\', r'E:\\']
-writer = pd.ExcelWriter(r'D:\lllBig file list.xlsx', engine= 'xlsxwriter')
+writer = pd.ExcelWriter(r'D:\Big file list.xlsx', engine= 'xlsxwriter')
 
 for i in folders:
     name = 'Files at ' + i.replace('\\','').replace(':','')
-    df = folder_files(folder = i).sort_values('Size - MB', ascending=False,inplace=True)
+    df = folder_files(folder = i, size = 200).sort_values('Size - MB', ascending=False,inplace=True)
     df.to_excel(writer, name, index = False)
 
 writer.save()
