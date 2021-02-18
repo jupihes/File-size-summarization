@@ -7,6 +7,6 @@ Program to provide excel of files with size greater than specified size, default
 - To change file size to your desired value, change 200 to what you look for in ```folder_files(folder = i, size = 200)```.
 
 - list of specified folders =  ```folders = [r'C:\\Windows',r'D:\\', r'E:\\']```
-- Output will be stored at ```'D:\Big file list.xlsx'``.
+- Output will be stored at ```'D:\Big file list.xlsx'```.
 
 
