@@ -1,4 +1,4 @@
-# File-size-summarization
+# Folder File size summarization for Windows
 
 A script to provide excel containing list of files greater than your defined size for list of defined folders 
 
