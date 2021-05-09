@@ -5,6 +5,7 @@ Created on Wed Sep 25 2018
 Program to provide excel of files with size greater than specified size in list of specified folders, with file size, extension.
 """
 import pandas as pd
+import os
 
 def folder_files(folder = r'C:\\', size = 200):
     folder_size = 0
