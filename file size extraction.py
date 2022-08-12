@@ -20,16 +20,16 @@ def folder_files(folder = r'C:\\', size = 200):
     #            temp = filename + '\t' + str(os.path.getsize(filename)/1000./1000) + '\t'\
     #            + str(filename.split('.')[-1]) +'\n'
     #            file1.write(temp)
+    
                 folder_size += os.path.getsize(filename)
                 
                 temp_list = [filename, str(os.path.getsize(filename)/1000./1000),\
-                str(filename.split('.')[-1])]
+                str(os.path.splitext(filename)[-1])]
                 rows_list.append(temp_list)
             
            
     #print("Folder = %0.1f MB" % (folder_size/(1000*1000.0)))
-    print("Sum greater than %d MB files at folder %s = %0.1f MB" % (size,folder, folder_size/(1000*1000.0)))
-    
+    print(f"Sum greater than {size} MB files at folder {folder} = {folder_size/(1000*1000.0):0.1f} MB")
     df = pd.DataFrame(rows_list,columns= ['File/Folder Name','Size - MB','File type'])
     return df
 
