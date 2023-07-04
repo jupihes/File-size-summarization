@@ -7,7 +7,14 @@ Program to provide excel of files with size greater than specified size in list 
 import pandas as pd
 import os
 
-def folder_files(folder = r'C:\\', size = 200):
+ if os.name == 'posix':
+    print("Linux")
+elif os.name == 'nt':
+    print("Windows")
+else:
+    print("Unknown system")
+    
+def folder_files(folder = r'C:\\', size = 200, OS_selector='\'):
     folder_size = 0
     rows_list = []
     for (path, dirs, files) in os.walk(folder):
