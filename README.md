@@ -1,5 +1,6 @@
-# Folder File size summarization for Windows
+# Folder File details size summarization 
 
+- ## Folder File size summarization for Windows
 A script to provide excel containing list of files greater than your defined size for list of defined folders 
 
 Program to provide excel of files with size greater than specified size, default = 200 MB, in list of specified folders, with file size, extension.
@@ -9,4 +10,5 @@ Program to provide excel of files with size greater than specified size, default
 - list of specified folders =  ```folders = [r'C:\\Windows',r'D:\\', r'E:\\']```
 - Output will be stored at ```'D:\Big file list.xlsx'```.
 
-
+- ## Folder File size summarization for Linux
+Simple code to manage similar and extract file_folder_details for Linux
