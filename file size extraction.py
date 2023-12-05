@@ -7,7 +7,7 @@ Program to provide excel of files with size greater than specified size in list 
 import pandas as pd
 import os
 
- if os.name == 'posix':
+if os.name == 'posix':
     print("Linux")
 elif os.name == 'nt':
     print("Windows")
