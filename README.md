@@ -13,4 +13,6 @@ Program to provide excel of files with size greater than specified size, default
 
 ## Folder File size summarization for Linux
 
-Simple code to manage similar and extract file_folder_details for Linux
+- Simple code to manage similar and extract file_folder_details for Linux
+- [ ] fix issue with `link`
+  - `if os.path.islink(f)`
